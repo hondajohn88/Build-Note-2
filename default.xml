@@ -653,7 +653,12 @@
 
   <!-- Device -->
   <project path="device/xiaomi/scorpio" name="android_device_xiaomi_scorpio" remote="hondajohn88" revision="Tesla" />
+  <project path="device/xiaomi/msm8996-common" name="android_device_xiaomi_msm8996-common" remote="hondajohn88" revision="cm-14.1" />
 
+  <!--Vendor -->
+    <project path="vendor/xiaomi/scorpio" name="android_vendor_xiaomi_scorpio" remote="hondajohn88" revision="cm-14.1" />
+    <project path="vendor/xiaomi/msm8996-common" name="android_vendor_xiaomi_msm8996-common" remote="hondajohn88" revision="master" />
+  
   <!-- Packages -->
   <project path="packages/apps/Settings" name="scorpio_tesla_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="n7.1.2" />
 
