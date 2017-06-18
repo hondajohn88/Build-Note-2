@@ -104,7 +104,6 @@
   <project path="external/zip" name="external_zip" remote="tesla" />
   <project path="external/zlib" name="external_zlib" groups="pdk" remote="tesla" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="tesla" />
-  <project path="frameworks/base" name="frameworks_base" remote="tesla" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="tesla" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="tesla" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="tesla" />
@@ -659,8 +658,9 @@
     <project path="vendor/xiaomi/scorpio" name="android_vendor_xiaomi_scorpio" remote="hondajohn88" revision="cm-14.1" />
     <project path="vendor/xiaomi/msm8996-common" name="android_vendor_xiaomi_msm8996-common" remote="hondajohn88" revision="master" />
   
-  <!-- Packages -->
+  <!-- Packages & framework -->
   <project path="packages/apps/Settings" name="scorpio_tesla_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="n7.1.2" />
+  <project path="frameworks/base" name="scorpio_tesla_frameworks_base" groups="pdk-fs" remote="hondajohn88" revision="n7.1.2" />
 
   <!-- external repos -->
   <include name="local_manifests/tesla_manifest.xml" />
