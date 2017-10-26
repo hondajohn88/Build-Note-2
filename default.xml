@@ -355,7 +355,7 @@
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
 
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="th" revision="n" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="n" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -460,7 +460,7 @@
   <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="th" revision="n" />
+  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="n" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
@@ -492,7 +492,7 @@
   <project path="packages/apps/RetailDemo" name="platform/packages/apps/RetailDemo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="android_packages_apps_SafetyRegulatoryInfo" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="th" revision="n" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="n" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="th" revision="n" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="android_packages_apps_StorageManager" groups="pdk-fs" />
