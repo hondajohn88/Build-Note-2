@@ -611,7 +611,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="hondajohn88" revision="xenonhd" />
 	
-  <project path="build" name="android_build" groups="pdk" remote="hondajohn88" revision="xenonhd" >
+  <project path="build" name="android_build_-chiron-" groups="pdk" remote="hondajohn88" revision="xenonhd" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="th" revision="n" />
