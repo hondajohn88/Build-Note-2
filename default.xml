@@ -486,7 +486,6 @@
   <project path="packages/apps/Test/connectivity" name="platform/packages/apps/Test/connectivity" groups="pdk" remote="aosp" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" groups="pdk-fs" />
   <project path="packages/apps/WallpaperPicker" name="android_packages_apps_WallpaperPicker" />
-  <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="th" revision="n" />
   <project path="packages/apps/XenonOTA" name="android_packages_apps_XenonOTA" remote="th" revision="n" />
   <project path="packages/experimental" name="platform/packages/experimental" remote="aosp" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" />
@@ -610,7 +609,8 @@
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="xenonhd" />
-
+  <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="hondajohn88" revision="xenonhd" />
+	
   <project path="build" name="android_build" groups="pdk" remote="hondajohn88" revision="xenonhd" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
