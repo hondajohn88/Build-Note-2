@@ -52,17 +52,6 @@
   <project path="platform_testing" name="platform/platform_testing" groups="pdk-fs,pdk-cw-fs,cts" remote="aosp" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
-
-  <project path="build" name="android_build" groups="pdk" remote="th" revision="n" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="th" revision="n" />
-  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="th" revision="n" />
-  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="th" revision="n" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-
   <project path="external/aac" name="android_external_aac" groups="pdk" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault,pdk-fs" remote="aosp" />
   <project path="external/android-clat" name="android_external_android-clat" groups="pdk" />
@@ -355,7 +344,6 @@
   <project path="external/zxing" name="platform/external/zxing" groups="pdk" remote="aosp" />
 
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="n" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -420,7 +408,6 @@
   <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8994" />
   <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" />
   <project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8998" />
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="xenonhd" />
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" groups="pdk" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" />
@@ -460,7 +447,6 @@
   <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="n" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
@@ -492,7 +478,6 @@
   <project path="packages/apps/RetailDemo" name="platform/packages/apps/RetailDemo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="android_packages_apps_SafetyRegulatoryInfo" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="n" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="th" revision="n" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="android_packages_apps_StorageManager" groups="pdk-fs" />
@@ -615,11 +600,25 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" />
-  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="th" revision="n" />
+  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="hondajohn88" revision="xenonhd" />
   <project path="vendor/xiaomi/msm8998-common" name="android_vendor_xiaomi_msm8998-common" remote="hondajohn88" revision="mkn-mr1" />
   <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="hondajohn88" revision="xenonhd" />
   <project path="vendor/xiaomi/chiron" name="android_vendor_xiaomi_chiron" remote="hondajohn88" revision="xenonhd" />
   <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" remote="hondajohn88" revision="xenonhd" />
   <project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="hondajohn88" revision="xenonhd" />
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="xenonhd" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="xenonhd" />
+  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="xenonhd" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="xenonhd" />
+
+  <project path="build" name="android_build" groups="pdk" remote="hondajohn88" revision="xenonhd" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="th" revision="n" />
+  <project path="build/kati" name="android_build_kati" groups="pdk,tradefed" remote="th" revision="n" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="th" revision="n" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
 </manifest>
