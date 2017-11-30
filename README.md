@@ -1,4 +1,4 @@
 # Build - Mi Mix 2
 Manifest for Xiaomi Mi Mix 2
 
-To build: repo init -u https://github.com/hondajohn88/Build-Note-2 -b Xenonhd
+To build: repo init -u https://github.com/hondajohn88/Build_Xiaomi_ROMs -b Xenonhd
