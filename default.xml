@@ -27,6 +27,9 @@
 		   
   <remote  name="th"
            fetch="https://github.com/TeamHorizon" />
+	
+  <remote name="hondajohn88"
+           fetch="https://github.com/hondajohn88/" /> 
 
   <default revision="refs/heads/cm-14.1"
            remote="laos"
