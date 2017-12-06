@@ -46,7 +46,7 @@
            sync-j="4" />
 
   <!-- Tesla Repo's -->
-  <project path="manifest" name="Build_Xiaomi_ROMs" remote="hondajohn88" />
+  <project path="manifest" name="Build_Xiaomi_ROMs" remote="hondajohn88" revision="Tesla-N_chiron" />
   <project path="build" name="build" groups="pdk,tradefed" remote="tesla" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
