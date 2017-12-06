@@ -46,7 +46,7 @@
            sync-j="4" />
 
   <!-- Tesla Repo's -->
-  <project path="manifest" name="manifest" remote="tesla" />
+  <project path="manifest" name="Build_Xiaomi_ROMs" remote="hondajohn88" />
   <project path="build" name="build" groups="pdk,tradefed" remote="tesla" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -155,13 +155,7 @@
 
   <!-- LockClock -->
   <project path="external/google" name="external_google" remote="tesla" />
-  <project path="packages/apps/LockClock" name="packages_apps_LockClock" remote="tesla" />  
-
-  <!-- OTA -->
-  <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="tesla" revision="n7.1" />
-  <project path="OTA_config" name="Tesla-M-Devices/OTA_config" remote="github" revision="master" >
-      <copyfile src="ota_conf" dest="ota_conf" />
-  </project>
+  <project path="packages/apps/LockClock" name="packages_apps_LockClock" remote="tesla" /> 
   
   <!-- OMS -->
   <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
@@ -651,17 +645,13 @@
   <project path="packages/apps/FloatingActionButton" name="FloatingActionButton" remote="tesla" />  
 
   <!-- Device -->
-  <project path="device/xiaomi/scorpio" name="android_device_xiaomi_scorpio" remote="hondajohn88" revision="Tesla" />
-  <project path="device/xiaomi/msm8996-common" name="android_device_xiaomi_msm8996-common" remote="hondajohn88" revision="Tesla" />
+  <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" remote="hondajohn88" revision="Tesla-N_chiron" />
+  <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="hondajohn88" revision="Tesla-N_chiron" />
 
   <!--Vendor -->
-    <project path="vendor/xiaomi/scorpio" name="android_vendor_xiaomi_scorpio" remote="hondajohn88" revision="Tesla" />
-    <project path="vendor/xiaomi/msm8996-common" name="android_vendor_xiaomi_msm8996-common" remote="hondajohn88" revision="Tesla" />
+    <project path="vendor/xiaomi/chiron" name="android_vendor_xiaomi_chiron" remote="hondajohn88" revision="Tesla-N_chiron" />
+    <project path="vendor/xiaomi/msm8998-common" name="android_vendor_xiaomi_msm8998-common" remote="hondajohn88" revision="Tesla-N_chiron" />
   
-  <!-- Packages & framework -->
-  <project path="packages/apps/Settings" name="scorpio_tesla_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="n7.1.2" />
-  <project path="frameworks/base" name="scorpio_tesla_frameworks_base" groups="pdk-fs" remote="hondajohn88" revision="n7.1.2" />
-
   <!-- external repos -->
   <include name="local_manifests/tesla_manifest.xml" />
   <include name="local_manifests/roomservice.xml" />
