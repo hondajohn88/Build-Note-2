@@ -22,6 +22,9 @@
 
   <remote name="hondajohn88"
            fetch="https://github.com/hondajohn88/" />
+	
+  <remote name="RR-chiron"
+           fetch="https://github.com/RR-chiron/" />
 		   
   <remote  name="th"
            fetch="https://github.com/TeamHorizon" />
@@ -599,17 +602,17 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" />
-  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="hondajohn88" revision="xenonhd" />
-  <project path="vendor/xiaomi/msm8998-common" name="android_vendor_xiaomi_msm8998-common" remote="hondajohn88" revision="mkn-mr1" />
-  <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="hondajohn88" revision="xenonhd" />
+  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="th" revision="n" />
+  <project path="vendor/xiaomi/msm8998-common" name="android_vendor_xiaomi_msm8998-common" remote="RR-chiron" revision="kernel-sources" />
+  <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" remote="RR-chiron" revision="kernel-sources" />
   <project path="vendor/xiaomi/chiron" name="android_vendor_xiaomi_chiron" remote="hondajohn88" revision="xenonhd" />
-  <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" remote="hondajohn88" revision="xenonhd" />
-  <project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="hondajohn88" revision="xenonhd" />
+  <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" remote="RR-chiron" revision="kernel-sources" />
+  <project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="RR-chiron" revision="kernel-sources" />
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="xenonhd" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="xenonhd" />
-  <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="hondajohn88" revision="xenonhd" />
+  <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="th" revision="n" />
 	
   <project path="build" name="android_build_-chiron-" groups="pdk" remote="hondajohn88" revision="xenonhd" >
     <copyfile src="core/root.mk" dest="Makefile" />
