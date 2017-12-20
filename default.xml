@@ -408,7 +408,6 @@
   <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8974" />
   <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8994" />
   <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8998" />
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" groups="pdk" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" />
   <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" revision="cm-14.1-caf" />
@@ -605,7 +604,7 @@
   <project path="vendor/xiaomi/chiron" name="android_vendor_xiaomi_chiron" remote="hondajohn88" revision="xenonhd" />
   <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" remote="RR-chiron" revision="kernel-sources" />
   <project path="kernel/xiaomi/msm8998" name="android_kernel_xiaomi_msm8998" remote="RR-chiron" revision="kernel-sources" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="RR-chiron" revision="proximity" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="chiron_n7.1-caf-8998" />
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="xenonhd" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="hondajohn88" revision="xenonhd" />
