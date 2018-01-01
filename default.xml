@@ -611,7 +611,10 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="xenonhd" />
   <project path="packages/apps/XenonApps" name="android_packages_apps_XenonApps" remote="th" revision="n" />
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="hondajohn88" revision="xenonhd" />
-  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" groups="qcom" remote="hondajohn88" revision="n7.1-caf-8998" />
+  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" groups="qcom" remote="RR-chiron" revision="proximity" />
+  <project path="vendor/nxp-nfc/opensource/Nfc" name="android_vendor_nxp-nfc_opensource_Nfc" remote="hondajohn88" revision="cm-14.1" />
+  <project path="vendor/nxp-nfc/opensource/libnfc-nci" name="android_vendor_nxp-nfc_opensource_libnfc-nci" remote="hondajohn88" revision="cm-14.1" />
+  <project path="vendor/nxp-nfc/opensource/frameworks" name="android_vendor_nxp-nfc_opensource_frameworks" remote="hondajohn88" revision="cm-14.1" />
   <project path="build" name="android_build_-chiron-" groups="pdk" remote="hondajohn88" revision="xenonhd" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
