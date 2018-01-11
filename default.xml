@@ -585,6 +585,5 @@
   <project path="hardware/lineage/livedisplay" name="LineageOS/android_hardware_lineage_livedisplay" remote="github" revision="lineage-15.0" />
   
   <project path="vendor/xiaomi/sagit" name="NisseCool/android_vendor_xiaomi_sagit" remote="github" revision="master" />
-  <project path="device/xiaomi/sagit" name="NisseCool/android_device_xiaomi_sagit" remote="github" revision="lineage-15.1" />
   
 </manifest>
