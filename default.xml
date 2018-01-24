@@ -12,6 +12,9 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-8.1.0_r1" />
+  
+  <remote name="hondajohn88"
+           fetch="https://github.com/hondajohn88/" />
 
   <default revision="refs/heads/staging/lineage-15.1"
            remote="github"
