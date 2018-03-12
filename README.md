@@ -3,13 +3,7 @@ Atomic-OS
 
 Getting Started
 ---------------
-To initialize your local repository using the our trees, use a command like this:
-
-    repo init -u https://github.com/Atomic-OS/platform_manifest.git -b oreo
-
-or if you use ssh:
-
-    repo init -u git@github.com:Atomic-OS/platform_manifest.git -b oreo
+To build: repo init -u https://github.com/hondajohn88/Build_Xiaomi_ROMs -b AtomicOS_Oreo
 
 Then to sync up:
 ---------------
