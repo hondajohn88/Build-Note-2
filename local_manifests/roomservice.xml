@@ -2,7 +2,7 @@
 <manifest>
   <project name="android_device_xiaomi_chiron" path="device/xiaomi/chiron" remote="hondajohn88" revision="los-chiron-oreo" />
   <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo-8.1" />
-  <project name="kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="RR-oreo-chiron" revision="oreo" />
+  <project name="kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="los-chiron-oreo" />
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
   <project name="android_frameworks_av" path="frameworks/av" groups="pdk" remote="hondajohn88" revision="los-chiron-oreo" />
