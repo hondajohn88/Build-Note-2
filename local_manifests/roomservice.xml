@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="android_device_xiaomi_chiron" path="device/xiaomi/chiron" remote="hondajohn88" revision="los-chiron-oreo" />
+  <project name="android_device_xiaomi_chiron" path="device/xiaomi/chiron" remote="hondajohn88" revision="validus-oreo" />
   <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo-8.1" />
   <project name="android_kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="los-chiron-oreo" />
   <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="LOS" revision="lineage-15.1" />
