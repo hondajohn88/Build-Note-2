@@ -8,8 +8,7 @@
            fetch="https://github.com/hondajohn88/" />
 
   <remote  name="LOS"
-           fetch=".."
-           review="review.lineageos.org" />
+           fetch="https://github.com/LineageOS" />
 
   <remote  name="gzosp"
            fetch="https://github.com/GZOSP" />
