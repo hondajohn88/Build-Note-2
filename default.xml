@@ -495,7 +495,7 @@
   <include name="validus_default.xml" />
 
   <!-- GZOSP CAF manifest -->
-  <include name="caf_default.xml" />
+  <include name="caf-default.xml" />
 
   <!-- hondajohn88 roomservice -->
   <include name="local_manifests/roomservice.xml" />
