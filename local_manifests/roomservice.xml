@@ -7,6 +7,6 @@
   <project name="android_frameworks_av" path="frameworks/av" groups="pdk" remote="hondajohn88" revision="los-chiron-oreo" />
   <project name="android_frameworks_native" path="frameworks/native" groups="pdk" remote="hondajohn88" revision="los-chiron-oreo" />
   <project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="hondajohn88" revision="los-chiron-oreo" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8998" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="aos-chiron-oreo" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8998" groups="pdk,qcom,qcom_display" remote="hondajohn88" revision="aos-chiron-oreo" />
+  <project name="hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8998" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="aos-chiron-oreo" />
+  <project name="hardware_qcom_display" path="hardware/qcom/display-caf/msm8998" groups="pdk,qcom,qcom_display" remote="hondajohn88" revision="aos-chiron-oreo" />
 </manifest>
