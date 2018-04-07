@@ -8,9 +8,6 @@
            remote="aosp"
            sync-c="true"
            sync-j="4" />
-    
-  <remote name="hondajohn88"
-           fetch="https://github.com/hondajohn88/" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -627,8 +624,5 @@
 
   <!-- CarbonROM -->
   <include name="carbon-default.xml" />
-  
-  <!-- hondajohn88 -->
-  <include name="local_manifests/roomservice.xml" />
 
 </manifest>
