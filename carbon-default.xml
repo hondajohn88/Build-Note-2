@@ -14,9 +14,6 @@
   
   <remote name="hondajohn88"
            fetch="https://github.com/hondajohn88/" />
-  
-  <remote name="RR-oreo-chiron"
-           fetch="https://github.com/RR-oreo-chiron/" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
