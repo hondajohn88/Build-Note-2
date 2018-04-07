@@ -624,5 +624,8 @@
 
   <!-- CarbonROM -->
   <include name="carbon-default.xml" />
+  
+  <!-- hondajohn88 -->
+  <include name="roomservice.xml" />
 
 </manifest>
