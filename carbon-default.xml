@@ -32,6 +32,9 @@
 
   <!-- Include CAF -->
   <include name="carbon-caf.xml" />
+    
+  <!-- hondajohn88 -->
+  <include name="local_manifests/roomservice.xml" />
 
   <!-- CarbonROM Projects -->
   <project path="device/carbon/sepolicy" name="CarbonROM/android_device_carbon_sepolicy" remote="carbon" />
@@ -53,8 +56,5 @@
 
   <!-- LineageOS Projects -->
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
-  
-  <!-- hondajohn88 -->
-  <include name="local_manifests/roomservice.xml" />
   
 </manifest>
