@@ -20,6 +20,9 @@
            review="review.lineageos.org"
            revision="refs/heads/lineage-15.1"
            sync-j="8" />
+    
+  <remote name="hondajohn88"
+           fetch="https://github.com/hondajohn88/" />
 
   <!-- FIRST: Remove unused/forked AOSP Projects -->
   <include name="remove.xml" />
@@ -50,5 +53,8 @@
 
   <!-- LineageOS Projects -->
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
-
+  
+  <!-- hondajohn88 -->
+  <include name="local_manifests/roomservice.xml" />
+  
 </manifest>
