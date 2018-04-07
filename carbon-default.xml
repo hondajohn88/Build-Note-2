@@ -11,9 +11,15 @@
            fetch="git://github.com/"
            sync-c="true"
            sync-j="8" />
-  
+
   <remote  name="private"
            fetch="ssh://git@github.com" />
+
+  <remote  name="lineage"
+           fetch=".."
+           review="review.lineageos.org"
+           revision="refs/heads/lineage-15.1"
+           sync-j="8" />
     
   <remote name="hondajohn88"
            fetch="https://github.com/hondajohn88/" />
@@ -26,9 +32,6 @@
 
   <!-- Include CAF -->
   <include name="carbon-caf.xml" />
-    
-  <!-- hondajohn88 -->
-  <include name="local_manifests/roomservice.xml" />
 
   <!-- CarbonROM Projects -->
   <project path="device/carbon/sepolicy" name="CarbonROM/android_device_carbon_sepolicy" remote="carbon" />
@@ -50,5 +53,15 @@
 
   <!-- LineageOS Projects -->
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
-  
+
+  <!-- hondajohn88 Projects -->
+  <project name="android_device_xiaomi_chiron" path="device/xiaomi/chiron" remote="hondajohn88" revision="carbon-chiron-oreo" />
+  <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo-8.1" />
+  <project name="android_kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="los-chiron-oreo" />
+  <project name="android_device_qcom_common" path="device/qcom/common" remote="lineage" />
+  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineage" />
+  <project name="android_frameworks_av" path="frameworks/av" groups="pdk" remote="hondajohn88" revision="carbon-chiron-oreo" />
+  <project name="android_frameworks_native" path="frameworks/native" groups="pdk" remote="hondajohn88" revision="carbon-chiron-oreo" />
+  <project name="hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8998" groups="qcom,qcom_audio,pdk" remote="hondajohn88" revision="aos-chiron-oreo" />
+
 </manifest>
