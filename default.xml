@@ -626,6 +626,6 @@
   <include name="carbon-default.xml" />
   
   <!-- hondajohn88 -->
-  <include name="roomservice.xml" />
+  <include name="local_manifests/roomservice.xml" />
 
 </manifest>
