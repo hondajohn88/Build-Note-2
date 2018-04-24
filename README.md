@@ -8,6 +8,6 @@ Additional required files to build this rom include:
  - Linaro Toolchain 5.5: gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu
  
  Place snapdragon llvm compiler in /prebuilts
- Place linaro toolchain 5.5 in prebuilts/gcc/linux-x86/aarch64
+ Place linaro toolchain 5.5 in prebuilts/gcc/linux-x86/aarch64 and rename folder to gcc-linaro-5.5.0
  
  Make sure you have qcom/common with sdllvm-lto-defs.mk in it.
