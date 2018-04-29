@@ -31,7 +31,6 @@
            sync-j="4" />
 
   <!-- AOKP projects -->
-  <project path="platform_manifest" name="AOKP/platform_manifest" />
   <project path="build/make" name="AOKP/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
