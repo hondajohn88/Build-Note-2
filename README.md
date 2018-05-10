@@ -1,9 +1,6 @@
-Build for Xiaomi Mi Mix 2
-
-[Android Open Kang Project](http://aokp.co)
+[Android Ice Cold Project](http://aicp-rom.com)
 ====================================
 
-![Kanged Unicorn](http://aokp.co/images/cms-images/106.png)
 
 Download the Source
 ===================
@@ -13,19 +10,37 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 Initializing Repository
 -----------------------
 
-To build: repo init -u https://github.com/hondajohn88/Build_Xiaomi_ROMs -b aokp-chiron-oreo
+Repo initialization:
 
-Additional required files to build this rom include:
+    $ repo init -u https://github.com/AICP/platform_manifest.git -b o8.1
 
-Snapdragon LLVM compiler: snapdragon-llvm-4.0.2-linux64
-Linaro Toolchain 5.5: gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu
-Place snapdragon llvm compiler in /prebuilts Place linaro toolchain 5.5 in prebuilts/gcc/linux-x86/aarch64 and rename folder to gcc-linaro-5.5.0
 
-Make sure you have qcom/common with sdllvm-lto-defs.mk in it.
+sync repo :
 
-Sync the repository:
+    $ repo sync
 
-    $ repo sync --force-sync
+Some info on how to customize your sync:
+
+  -f, --force-broken    continue sync even if a project fails to sync
+
+  --force-sync          overwrite an existing git directory if it needs to
+                        point to a different object directory. WARNING: this
+                        may cause loss of data
+
+  -l, --local-only      only update working tree, don't fetch
+
+  -n, --network-only    fetch only, don't update working tree
+
+  -c, --current-branch  fetch only current branch from server
+
+  -j JOBS, --jobs=JOBS  projects to fetch simultaneously (default 4)
+  --no-clone-bundle     disable use of /clone.bundle on HTTP/HTTPS
+
+  --no-tags             don't fetch tags
+
+Smallest/fastest sync:
+    $ repo sync --no-tags --no-clone-bundle
+    we already define -c in our default.xml, so no need to add it
 
 ***
 
@@ -35,12 +50,115 @@ Building
 After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
 
     . build/envsetup.sh
-    lunch
+    brunch
 
-You can also build for specific devices (eg. chiron) like this:
+
+You can also build (and see how long it took) for specific devices like this:
 
     . build/envsetup.sh
-    lunch aokp_chiron-userdebug
-    mka rainbowfarts
+    time brunch angler
 
-Remember to `make clobber && make clean` every now and then!
+If you want you can make the lineage SU add-on by doing:
+    lunch aicp_arm64-eng (for arm64 target)
+    mka addonsu
+
+Remember to `make clobber` every now and then!
+
+
+Optional After Successful Build
+--------------------------------
+
+After you get a working build, and if you would like to share your build on XDA (Regular Unofficial Builds), then please use the following Template to create
+an XDA thread. Note that the template is a guideline of sort. You may make your own changes to it (esp please do in the download link) but try
+and make your thread as close to this one as possible. This is to avoid cluttering and make stuff organized.
+
+Link : https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/xda_thread-template.txt
+
+
+Uploading to AICP Gerrit
+---------------
+
+1st You must have local ssh keys on your computer if you do not here is a [guide](http://goo.gl/86CfDP) to generate them.
+
+2nd Make an account on [Gerrit](http://gerrit.aicp-rom.com) login only using GoogleAuth2
+
+3rd Add your ssh public key to your account
+
+4th Make your changes and commit them
+
+5th use the following command to push your commit to gerrit
+
+(From root android directory)
+    . build/envsetup.sh
+    repo start o8.1 path/to/project
+    (Go to repo you are patching, make your changes and commit)
+    repo upload .
+For more help on using this tool, use this command: repo help upload
+
+You can also use:
+
+    git push ssh://USERNAME@gerrit.aicp-rom.com:29418/AICP/REPO_NAME HEAD:refs/for/branch-name
+
+Example:
+
+    git push ssh://mosimchah@gerrit.aicp-rom.com:29418/AICP/platform_manifest HEAD:refs/for/o8.1
+
+
+6th You will get an error about a missing Change-ID in that error it will show you a suggested commit message copy the change id
+
+7th Do the following command and add the change id to the end of the commit message
+
+    git commit --amend
+
+Here is an example of what the commit message should look like:
+
+> Add how to push to gerrit
+>
+> Change-Id: I93949d30d732de35222d9d78d1f94e33e4bffc47
+
+8th use the same command to push to gerrit and if you did everything properly it will be up on gerrit
+
+
+
+## Maintain Authorship ##
+Always make sure if you submit a patch/fix that you maintain authorship.
+This is very important to not only us but to the entire open source community. It's what keeps it going and encourages more developers to contribute their work.
+
+If you manually cherry pick a patch/fix add the original author prior to pushing to our gerrit.
+This task is very easy and is usually done after you commit a patch/fix locally.
+
+i.e - Once you type in "git commit -a" the commit message and you have saved it, type in the following:
+
+```bash
+git commit --amend --author "Author <email@address.com>"
+```
+
+So it should look like this once you get all author's information:
+
+```bash
+git commit --amend --author "John Doe <john.doe@gmail.com>"
+```
+Note: If you're a Kanger, Alex Cruz ( @Mazda-- ) will hunt you down, burn you at the stake, and eat you alive!
+
+Picking changes from our gerrit
+-------------------------------
+
+(From root android directory)
+    . build/envsetup.sh
+
+to pick every change from a topic:
+
+    repopick -t topic
+
+to pick a specific change
+
+    repopick commit-number
+
+example, to pick this commit: http://gerrit.aicp-rom.com/#/c/36939/
+
+    repopick 36939
+
+
+## Maintainer Application ##
+If you have the necessary skills and would like to become a part of our group by becoming a maintainer,
+please see [this link](https://github.com/AICP/vendor_aicp/blob/o8.1/Maintainer_Application.md) for further information and maintainer application.
