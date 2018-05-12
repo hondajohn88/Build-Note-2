@@ -10,9 +10,7 @@ Please read the [AOSP building instructions](http://source.android.com/source/in
 Initializing Repository
 -----------------------
 
-Repo initialization:
-
-    $ repo init -u https://github.com/AICP/platform_manifest.git -b o8.1
+To build: repo init -u https://github.com/hondajohn88/Build_Xiaomi_ROMs -b aicp
 
 
 sync repo :
