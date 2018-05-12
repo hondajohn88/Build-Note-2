@@ -8,7 +8,6 @@
   <project path="external/DUtils" name="AICP/external_DUtils" remote="aicp" />
   <project path="external/bash" name="AICP/external_bash" remote="aicp" />
   <project path="frameworks/av" name="AICP/frameworks_av" groups="pdk" remote="aicp" />
-  <project path="frameworks/base" name="AICP/frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="aicp" />
   <project path="frameworks/native" name="AICP/frameworks_native" groups="pdk" remote="aicp" />
   <project path="frameworks/opt/aicpgear" name="AICP/frameworks_opt_aicpgear" remote="aicp" />
   <project path="frameworks/opt/slimrecent" name="AICP/frameworks_opt_slimrecent" remote="aicp" />
@@ -137,4 +136,9 @@
     <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
   </project>
   <project path="vendor/qcom/opensource/rcs-service" name="LineageOS/android_vendor_qcom_opensource_rcs-service" />
+
+  <!-- hondajohn88 modifications -->
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
+  <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
+  <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
 </manifest>
