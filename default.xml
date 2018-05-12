@@ -13,6 +13,9 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-8.1.0_r20" />
 
+  <remote name="hondajohn88"
+           fetch="https://github.com/hondajohn88/" />
+  
   <default revision="refs/heads/lineage-15.1"
            remote="github"
            sync-c="true"
