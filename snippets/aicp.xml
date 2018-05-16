@@ -12,7 +12,6 @@
   <project path="frameworks/opt/aicpgear" name="AICP/frameworks_opt_aicpgear" remote="aicp" />
   <project path="frameworks/opt/slimrecent" name="AICP/frameworks_opt_slimrecent" remote="aicp" />
   <project path="hardware/interfaces" name="AICP/hardware_interfaces" remote="aicp" />
-  <project path="lineage-sdk" name="AICP/lineage-sdk" remote="aicp" />
   <project path="packages/apps/AicpExtras" name="AICP/packages_apps_AicpExtras" remote="aicp" />
   <project path="packages/apps/AICP_OTA" name="AICP/packages_apps_AICP_OTA" remote="aicp" />
   <project path="packages/apps/Dialer" name="AICP/packages_apps_Dialer" groups="pdk-fs" remote="aicp" />
@@ -147,4 +146,5 @@
   <project name="toolchain" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.5.0" remote="hondajohn88" revision="master" />
   <project name="snapdragon_llvm" path="prebuilts/snapdragon-llvm-4.0.2-linux64" remote="hondajohn88" revision="master" />
   <project name="android_prebuilts_misc_linux-x86_flex" path="prebuilts/misc/linux-x86/flex" remote="hondajohn88" revision="master" />
+  <project name="lineage-sdk" path="android_lineage-sdk" remote="hondajohn88" revision="lineage-15.1" />
 </manifest>
