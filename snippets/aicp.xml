@@ -144,4 +144,5 @@
   <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo-8.1" />
   <project name="android_vendor_xiaomi_msm8998-common" path="vendor/xiaomi/msm8998-common" remote="hondajohn88" revision="chiron-oreo" />
   <project name="android_kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="los-chiron-oreo" />
+  <project name="toolchain" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.5.0" remote="hondajohn88" revision="master" />
 </manifest>
