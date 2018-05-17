@@ -130,4 +130,17 @@
   <!-- Tools -->
   <project path="lineage/contributors-cloud-generator" remote="los" name="LineageOS/contributors-cloud-generator" groups="tools" revision="master" />
   <project path="lineage/scripts" remote="los" name="LineageOS/scripts" groups="tools" revision="master" />
+  
+    <!-- hondajohn88 modifications -->
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
+  <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aokp-chiron-oreo" />
+  <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
+  <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo" />
+  <project name="android_vendor_xiaomi_msm8998-common" path="vendor/xiaomi/msm8998-common" remote="hondajohn88" revision="chiron-oreo" />
+  <project name="android_kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="chiron-oreo" />
+  <project name="toolchain" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.5.0" remote="hondajohn88" revision="master" />
+  <project name="snapdragon_llvm" path="prebuilts/snapdragon-llvm-4.0.2-linux64" remote="hondajohn88" revision="master" />
+  <project name="android_prebuilts_misc_linux-x86_flex" path="prebuilts/misc/linux-x86/flex" remote="hondajohn88" revision="master" />
+  <project name="android_lineage-sdk" path="lineage-sdk" remote="hondajohn88" revision="lineage-15.1" />
+  
 </manifest>
