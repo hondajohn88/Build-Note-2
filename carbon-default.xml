@@ -63,6 +63,6 @@
   <project name="android_kernel_xiaomi_msm8998" path="kernel/xiaomi/msm8998" remote="hondajohn88" revision="chiron-oreo" />
   <project name="toolchain" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-5.5.0" remote="hondajohn88" revision="master" />
   <project name="android_prebuilts_misc_linux-x86_flex" path="prebuilts/misc/linux-x86/flex" remote="hondajohn88" revision="master" />
-  <project name="lineage-sdk" path="android_lineage-sdk" remote="hondajohn88" revision="lineage-15.1" />
+  <project name="android_lineage-sdk" path="lineage-sdk" remote="hondajohn88" revision="lineage-15.1" />
 
 </manifest>
