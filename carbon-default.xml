@@ -55,7 +55,7 @@
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" />
 
   <!-- hondajohn88 modifications -->
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="carbon-chiron-oreo" />
   <project path="device/xiaomi/chiron" name="android_device_xiaomi_chiron" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
   <project path="device/xiaomi/msm8998-common" name="android_device_xiaomi_msm8998-common" groups="pdk-cw-fs,pdk-fs" remote="hondajohn88" revision="aicp-chiron-oreo" />
   <project name="android_vendor_xiaomi_chiron" path="vendor/xiaomi/chiron" remote="hondajohn88" revision="chiron-oreo" />
