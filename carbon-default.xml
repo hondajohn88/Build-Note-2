@@ -68,5 +68,4 @@
   <project name="snapdragon_llvm" path="prebuilts/snapdragon-llvm-4.0.2-linux64" remote="hondajohn88" revision="master" />
   <project name="android_prebuilts_misc_linux-x86_flex" path="prebuilts/misc/linux-x86/flex" remote="hondajohn88" revision="master" />
   <project name="lineage-sdk" path="android_lineage-sdk" remote="hondajohn88" revision="lineage-15.1" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="hondajohn88" revision="carbon-chiron-oreo" />
 </manifest>
