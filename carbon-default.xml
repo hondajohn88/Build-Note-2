@@ -15,6 +15,9 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
+  <remote name="hondajohn88"
+           fetch="https://github.com/hondajohn88/" />
+
   <remote  name="lineage"
            fetch=".."
            review="review.lineageos.org"
