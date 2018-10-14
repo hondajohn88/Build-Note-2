@@ -69,6 +69,6 @@
   <project path="vendor/xiaomi/chiron" name="hondajohn88/android_vendor_xiaomi_chiron" remote="github" revision="chiron_pie" />
   <project path="vendor/xiaomi/msm8998-common" name="hondajohn88/android_vendor_xiaomi_msm8998-common" remote="github" revision="chiron_pie" />
   <project path="device/xiaomi/chiron" name="hondajohn88/android_device_xiaomi_chiron" remote="github" revision="chiron_pie" />
-  <project path="device/xiaomi/msm8998" name="hondajohn88/android_device_xiaomi_msm8998-common" remote="github" revision="msm8998-common_pie" />
+  <project path="device/xiaomi/msm8998-common" name="hondajohn88/android_device_xiaomi_msm8998-common" remote="github" revision="msm8998-common_pie" />
 
 </manifest>
