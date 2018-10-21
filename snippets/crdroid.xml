@@ -32,7 +32,7 @@
   <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" remote="crdroid" />
   <project path="external/vixl" name="crdroidandroid/android_external_vixl" remote="crdroid" />
 
-  <project path="frameworks/av" name="crdroidandroid/android_frameworks_av" remote="crdroid" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="hondajohn88" revision="crDroid-chiron-pie" />
   <project path="frameworks/base" name="crdroidandroid/android_frameworks_base" remote="crdroid" />
   <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" remote="crdroid" />
   <project path="frameworks/support" name="crdroidandroid/android_frameworks_support" remote="crdroid" />
