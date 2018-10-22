@@ -465,7 +465,7 @@
   <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel,pdk" remote="aosp" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel,pdk" remote="aosp" />
-  <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="pdk" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="hondajohn88" revision="crDroid-chiron-pie" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense,pdk" remote="aosp" />
   <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" />
@@ -478,7 +478,7 @@
   <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" groups="qcom_camera,pdk-qcom" />
   <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" />
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk-qcom" remote="hondajohn88" revision="crDroid-chiron-pie" />
+  <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk-qcom" />
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" />
   <project path="hardware/qcom/neuralnetworks/hvxservice" name="platform/hardware/qcom/neuralnetworks/hvxservice" groups="wahoo" remote="aosp" />
   <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" />
